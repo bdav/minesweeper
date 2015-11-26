@@ -101,10 +101,14 @@ $('td').mousedown(function(event){
 			break
 		case 3:
 			event.preventDefault();
-			gameBoard[y][x].flagged = true;
-			$(this).html('!');
-			minesFlagged++
-			$('#flagged').html('Flagged: ' + minesFlagged +'/10')
+			if (gameBoard[y][x].flagged != true ){
+				minesFlagged++
+				$('#flagged').html('Flagged: ' + minesFlagged +'/10')
+				gameBoard[y][x].flagged = true;
+				$(this).html('!');
+			}
+			
+
 			break
 		default:
 			break
