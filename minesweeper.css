@@ -8,3 +8,33 @@ td{
 	text-align:center;
 	cursor:default;
 }
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+table {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.button-container {
+	position: relative;
+	text-align: center;
+	padding: 10px;
+}
+.flagged-container {
+	position: relative;
+	text-align: right;
+	padding: 5px;
+}
+#flagged {
+	margin-right: 20px;
+}
+.game-button {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
